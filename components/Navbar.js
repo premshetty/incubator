@@ -7,7 +7,7 @@ const Navbar = () => {
         <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 shadow-md ">
             <div className=" flex flex-wrap items-center justify-between ">
                 <div className='flex gap-20'>
-                    <button className='w-auto h-12 rounded-2xl px-5 bg-gray-500 text-lg text-white font-bold'>Incubator</button>
+                    <img src="/logo.png" className='h-10' alt="" />
                     <div className='hidden  h-12 w-[300px] rounded-xl border-[3px] bg-white items-center px-3 border-[#18161646] sm:flex gap-2'>
                         <img src="/search.svg" className='h-6' alt="" />
                         <input type="text" placeholder='Search ...' className='rounded-xl h-full w-full outline-none placeholder:text-lg text-[#00000070]' />
