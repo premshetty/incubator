@@ -1,6 +1,7 @@
 import React from 'react'
+import classes from './style.module.css'
 const Card = ({ img, heading, para, linkedin }) => {
-    return <div className='flex flex-col items-center'>
+    return <div className='flex flex-col items-center text-center min-w-[300px]'>
         <img src={img ?? "/place.svg"} className='h-40' alt="" />
         <a href={linkedin} className='font-[500] text-2xl text-[#0000007a]'>{heading ?? " Access to VC"}</a>
         <p className='text-[black] text-md'>{para ?? "Get Access to angels and VCs at incubator"}</p>
@@ -21,20 +22,20 @@ const Main = () => {
             <div className='flex flex-col items-center gap-3 mt-10 px-3 md:px-10'>
 
                 <h1 id='perks' className='text-[42px] font-bold mt-12'>Perks and Benefits at incubator </h1>
-                <div className='flex flex-wrap w-full justify-around'>
+                <div className={`flex  w-full justify-around ${classes.cardcontainer}  gap-20  overflow-x-scroll`}>
                     <Card img="/money.svg" heading='Access to VC' para='Get Access to angels and VCs at incubator' />
                     <Card img="/indurstry.svg" heading='Access to VC' para='Get Access to angels and VCs at incubator' />
                     <Card img="/coworking.svg" heading='Access to VC' para='Get Access to angels and VCs at incubator' />
                 </div>
                 <h1 id='advisory' className='text-[42px] font-bold mt-10'>Advisory at Incubator</h1>
-                <div className='flex flex-wrap w-full justify-around'>
+                <div className={`flex  w-full justify-around ${classes.cardcontainer}  gap-20 overflow-x-scroll`}>
                     <Card img="/avatar.svg" heading='Davesh Manocha' linkedin='https://www.linkedin.com/in/daveshmanocha/' para=' INSEAD-VOH-MEDDO' />
                     <Card img="/avatar.svg" heading='Mansi Agarwal' linkedin='https://www.linkedin.com/in/dr-mansi-aggarwal-527a8322/' para=' INSEAD-VOH-MEDDO' />
                     <Card img="/avatar.svg" heading='Nav Khosla' linkedin='https://www.linkedin.com/in/navjeewan-khosla-9184191/' para=' INSEAD-VOH-MEDDO' />
                     <Card img="/avatar.svg" heading='Mohit Khullar' linkedin='https://www.linkedin.com/in/mohitkhullar1/' para=' INSEAD-VOH-MEDDO' />
                 </div>
                 <h1 id='mentor' className='text-[42px] font-bold mt-10'>Mentors at Incubator</h1>
-                <div className='flex flex-wrap w-full justify-around'>
+                <div className={`flex  w-full justify-around ${classes.cardcontainer}  gap-20 overflow-x-scroll`}>
                     <Card img="/avatar.svg" heading='Vinayak Burman' linkedin='https://www.linkedin.com/in/vinayak-burman-91ab9419/' para=' INSEAD-VOH-MEDDO' />
                     <Card img="/avatar.svg" heading='Abhay Vohra' linkedin='https://www.linkedin.com/in/abhay-vohra-63b98971/' para=' INSEAD-VOH-MEDDO' />
                     <Card img="/avatar.svg" heading='Rohit MA' linkedin='https://www.linkedin.com/in/rohitoncloud9/' para=' INSEAD-VOH-MEDDO' />
@@ -44,7 +45,7 @@ const Main = () => {
 
                 </div>
                 <h1 id='indurstry' className='text-[42px] font-bold mt-10'>Indurstry Partners at Incubator</h1>
-                <div className='flex flex-wrap w-full justify-around'>
+                <div className={`flex  w-full justify-around ${classes.cardcontainer}  gap-20 overflow-x-scroll`}>
                     <Card img="/avatar.svg" heading='Prof. Stephen Chick' linkedin='https://www.linkedin.com/in/stephen-chick-34b168/' para=' INSEAD-VOH-MEDDO' />
                     <Card img="/avatar.svg" heading='Shashi Reddy' linkedin='https://www.linkedin.com/in/sashireddi/' para=' INSEAD-VOH-MEDDO' />
                     <Card img="/avatar.svg" heading='Visalakshmi Chandmouli' linkedin='https://www.linkedin.com/in/visalakshi-chandramouli-b8501819/' para=' INSEAD-VOH-MEDDO' />
